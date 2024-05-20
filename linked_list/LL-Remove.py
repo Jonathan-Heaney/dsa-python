@@ -105,6 +105,7 @@ class LinkedList:
         prev = self.get(index - 1)
         removed_node = prev.next
         prev.next = removed_node.next
+        removed_node.next = None
         self.length -= 1
         return removed_node
 
